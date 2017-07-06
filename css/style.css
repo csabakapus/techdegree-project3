@@ -119,19 +119,9 @@ input[type="tel"],
   padding: 1.1em .8em;
 }
 
-/*
-.form__input,
-.form__select {
-  width: 100%;
-  border-radius: 5px;
-  background-color: lightgray;
-  padding: .9em .8em;
-}
-*/
-
-.form__input--half {
+input[class="form__input--half"] {
   width: 50%;
   border-radius: 5px;
   background-color: lightgray;
-  padding: .9em .8em;
+  padding: 1.1em .8em;
 }
