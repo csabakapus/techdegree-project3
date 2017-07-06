@@ -1,0 +1,119 @@
+/*-------------
+General Styling
+-------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding 0;
+}
+
+/*------------------
+Head Section Styling
+------------------*/
+
+
+
+h1 {
+  margin-top: 2.0em;
+}
+
+
+.title {
+  width: 100%;
+  padding: 1.875em 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  background-color: lightblue;
+}
+
+.wrap {
+  width: 100%;
+}
+
+/*-----------------------
+Container Section Styling
+-----------------------*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container__sub-information {
+  color: gray;
+}
+
+.container__hr-double {
+  border: 2px solid lightblue;
+  margin-top: 1.875em;
+
+}
+
+.container__hr-single {
+  border: 1px solid lightblue;
+  margin-top: 2px;
+}
+
+/*----------
+Form Styling
+----------*/
+
+.form {
+  margin: 1.25em 0;
+  text-align: left;
+}
+
+.form__legend {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+
+.form__label {
+  font-size: 1.2em;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  display: block;
+  color: gray;
+}
+
+.form__fieldset,
+.form__input {
+  border: none;
+}
+
+::placeholder {
+  text-align: right;
+  padding-right: .8em;
+  font-style: italic;
+}
+
+.form__select:empty {
+  color: gray;
+}
+
+.select__option {
+  padding-right: .8em;
+  color: black;
+}
+
+.select__option .empty {
+  color: gray;
+}
+
+.select__option:checked {
+  color: black;
+}
+
+.form__input,
+.form__select {
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: .9em 0.8em;
+}
