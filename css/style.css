@@ -93,27 +93,45 @@ Form Styling
   font-style: italic;
 }
 
-.form__select:empty {
-  color: gray;
+.form__select {
+  color: black;
 }
 
 .select__option {
   padding-right: .8em;
-  color: black;
 }
 
-.select__option .empty {
-  color: gray;
+.select__option:first-child {
+  color: green;
 }
 
 .select__option:checked {
-  color: black;
+  color: red;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+.form__select {
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: 1.1em .8em;
+}
+
+/*
 .form__input,
 .form__select {
   width: 100%;
   border-radius: 5px;
   background-color: lightgray;
-  padding: .9em 0.8em;
+  padding: .9em .8em;
+}
+*/
+
+.form__input--half {
+  width: 50%;
+  border-radius: 5px;
+  background-color: lightgray;
+  padding: .9em .8em;
 }
