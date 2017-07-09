@@ -33,7 +33,7 @@ h1 {
   text-align: center;
   color: white;
   font-size: 1.5em;
-  background-color: lightblue;
+  background-color: #660066;
 }
 
 .wrap {
@@ -46,7 +46,7 @@ Container Section Styling
 -----------------------*/
 
 .container {
-  max-width: 1024px;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 
@@ -57,13 +57,13 @@ Container Section Styling
 }
 
 .container__hr-double {
-  border: 2px solid lightblue;
+  border: 2px solid #660066;
   margin-top: 1.875em;
 
 }
 
 .container__hr-single {
-  border: 1px solid lightblue;
+  border: 1px solid #660066;
   margin-top: 2px;
 }
 
@@ -128,14 +128,14 @@ input[type="tel"],
 .form__select {
   width: 100%;
   border-radius: 5px;
-  background-color: lightgray;
+  background-color: #D896FF;
   padding: 1.1em .8em;
 }
 
 input[class="form__input--half"] {
   width: 50%;
   border-radius: 5px;
-  background-color: lightgray;
+  background-color: #D896FF;
   padding: 1.1em .8em;
   border: none;
 }
@@ -161,7 +161,7 @@ label[class="form__label--inline"] {
   width: 100%;
   height: 150px;
   resize: none;
-  background-color: lightgray;
+  background-color: #D896FF;
   border-radius: .5em;
   padding: .8em;
 }
@@ -174,7 +174,7 @@ button[type="submit"] {
   margin: 2em 0 0;
   width: 100%;
   height: 80px;
-  background-color: teal;
+  background-color: #800080;
   border: none;
   border-radius: 7px;
   color: white;
@@ -200,5 +200,13 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 2px solid blue;
+  border: 2px solid #800080;
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 1024px;
+  }
+
 }
