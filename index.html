@@ -13,17 +13,19 @@
   <div class="wrap">
 
     <header class="title">
-      <p >The Code Review</p>
+      <p>The Code Review</p>
     </header>
 
     <div class="container">
-      <h1>Signup for our newsletter</h1>
-      <p class="container__sub-information">Get the latest news on how your code is doing right in your inbox.</p>
+      <section class="section">
+        <h1>Signup for our newsletter</h1>
+        <p class="container__sub-information">Get the latest news on how your code is doing right in your inbox.</p>
+      </section>
 
       <hr class="container__hr-double">
       <hr class="container__hr-single">
 
-      <form class="form" action="index.html" method="get">
+      <form class="form" action="index.html" method="post">
         <fieldset class="form__fieldset">
           <legend class="form__legend">Contact Information</legend>
 
@@ -100,18 +102,40 @@
 
         <label class="form__label" for="zip-code">Zip Code</label>
         <input class="form__input--half" type="text" id="zip-code" name="user_zip-code">
+        </fieldset>
+      </form>
 
+      <hr class="container__hr-single">
+      <section>
+        <h1>Newsletter</h1>
+      </section>
 
+      <form class="form" action="index.html" method="post">
+        <fieldset class="form__fieldset">
+          <label class="form__label">Select the newsletter you would like to recieve</label>
+          <input class="form__input--inline" type="checkbox" id="html" name="newsletter-html"><label class="form__label--inline" for="html">HTML News</label><br>
+          <input class="form__input--inline" type="checkbox" id="css" name="newsletter-css"><label class="form__label--inline" for="css">CSS News</label><br>
+          <input class="form__input--inline" type="checkbox" id="js" name="newsletter-javascript"><label class="form__label--inline" for="js">Javascript News</label><br>
+
+          <label class="form__label" >Newsletter format</label>
+          <input class="form__input--inline" type="radio" id="format-html" name="format"><label class="form__label--inline" for="format-html">HTML form</label><br>
+          <input class="form__input--inline" type="radio" id="format-plainText" name="format"><label class="form__label--inline" for="format-plainText">Plain text</label><br>
+
+          <label class="form__label" for="otherTopic">Other topics you&apos;d like to hear about</label>
+          <textarea class="textarea" id="otherTopic"></textarea>
+
+          <button type="submit" id="submit" name="user_submit">Sign Up</button>
 
         </fieldset>
       </form>
 
 
     </div>
-
-
-
 </div> <!-- end of .wrap -->
+
+<footer class="footer">
+  <span>Copyright The Code Review</span>
+</footer>
 
 </body>
 </html>
