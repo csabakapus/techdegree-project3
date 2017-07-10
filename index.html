@@ -29,23 +29,23 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Contact Information</legend>
 
-          <label class="form__label" for="full-name">Full Name</label>
+          <label class="form__label left" for="full-name">Full Name</label>
           <input class="form__input" type="text" id="full-name" name="user_full-name" required placeholder="Required">
 
-          <label class="form__label" for="email">Email Address</label>
+          <label class="form__label left" for="email">Email Address</label>
           <input class="form__input" type="email" id="email" name="user_email" required placeholder="Required">
 
-          <label class="form__label" for="phone">Phone Number</label>
+          <label class="form__label left" for="phone">Phone Number</label>
           <input class="form__input" type="tel" id="phone" name="user_phone-number">
 
-          <label class="form__label" for="address">Street Address</label>
+          <label class="form__label left" for="address">Street Address</label>
           <input class="form__input" type="text" id="address" name="user_address">
 
-          <label class="form__label" for="city">City</label>
+          <label class="form__label left" for="city">City</label>
           <input class="form__input" type="text" id="city" name="user_city">
 
-          <label class="form__label" for="state">State</label>
-          <select class="form__select" id="state" name="user_state">
+          <label class="form__label left clearfix" for="state">State</label>
+          <select class="form__select clearfix" id="state" name="user_state">
             <option class="select__option" value="">Choose State</option>
             <option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -98,20 +98,21 @@
           	<option value="WV">West Virginia</option>
           	<option value="WI">Wisconsin</option>
           	<option value="WY">Wyoming</option>
-          </select>
+          </select><br>
 
-        <label class="form__label" for="zip-code">Zip Code</label>
+        <label class="form__label left clearfix" for="zip-code">Zip Code</label>
         <input class="form__input--half" type="text" id="zip-code" name="user_zip-code">
         </fieldset>
       </form>
 
       <hr class="container__hr-single">
       <section>
-        <h1>Newsletter</h1>
+      <!--  <h1 class="section__h1">Newsletter</h1> -->
       </section>
 
       <form class="form" action="index.html" method="post">
         <fieldset class="form__fieldset">
+          <legend class="form__legend">Newsletter</legend>
           <label class="form__label">Select the newsletter you would like to recieve</label>
           <input class="form__input--inline" type="checkbox" id="html" name="newsletter-html"><label class="form__label--inline" for="html">HTML News</label><br>
           <input class="form__input--inline" type="checkbox" id="css" name="newsletter-css"><label class="form__label--inline" for="css">CSS News</label><br>
@@ -122,7 +123,7 @@
           <input class="form__input--inline" type="radio" id="format-plainText" name="format"><label class="form__label--inline" for="format-plainText">Plain text</label><br>
 
           <label class="form__label" for="otherTopic">Other topics you&apos;d like to hear about</label>
-          <textarea class="textarea" id="otherTopic"></textarea>
+          <textarea class="textarea" id="otherTopic" name="user_otherTopic"></textarea>
 
           <button type="submit" id="submit" name="user_submit">Sign Up</button>
 

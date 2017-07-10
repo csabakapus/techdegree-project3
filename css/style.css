@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
 /*-------------
 General Styling
 -------------*/
@@ -5,11 +7,10 @@ General Styling
   box-sizing: border-box;
   margin: 0;
   padding 0;
+  font-family: 'PT Serif', serif;
+
 }
 
-:focus {
-  border: none;
-}
 
 /*------------------
 Head Section Styling
@@ -29,11 +30,11 @@ h1 {
 
 .title {
   width: 100%;
-  padding: 1.875em 0;
+  padding: .7em 0;
   text-align: center;
   color: white;
-  font-size: 1.5em;
-  background-color: #660066;
+  font-size: 3em;
+  background-color: #0D0548;
 }
 
 .wrap {
@@ -57,13 +58,13 @@ Container Section Styling
 }
 
 .container__hr-double {
-  border: 2px solid #660066;
+  border: 2px solid #0D0548;
   margin-top: 1.875em;
 
 }
 
 .container__hr-single {
-  border: 1px solid #660066;
+  border: 1px solid #0D0548;
   margin-top: 2px;
 }
 
@@ -99,11 +100,22 @@ Form Styling
   border: none;
 }
 
+/* to align the text of the placeholder inside the input to left! in IE11 (and maybe less) */
+:-ms-input-placeholder {
+  text-align: right;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    direction: rtl;
+    color: gray;
+}
+
 ::placeholder {
   text-align: right;
   padding-right: .8em;
   font-style: italic;
 }
+
 
 .form__select {
   color: black;
@@ -115,10 +127,6 @@ Form Styling
 }
 
 .form__select {
-  color: gray;
-}
-
-option:nth-child(1n+2) {
   color: black;
 }
 
@@ -128,14 +136,14 @@ input[type="tel"],
 .form__select {
   width: 100%;
   border-radius: 5px;
-  background-color: #D896FF;
+  background-color: #87C7DE;
   padding: 1.1em .8em;
 }
 
 input[class="form__input--half"] {
   width: 50%;
   border-radius: 5px;
-  background-color: #D896FF;
+  background-color: #87C7DE;
   padding: 1.1em .8em;
   border: none;
 }
@@ -161,7 +169,7 @@ label[class="form__label--inline"] {
   width: 100%;
   height: 150px;
   resize: none;
-  background-color: #D896FF;
+  background-color: #87C7DE;
   border-radius: .5em;
   padding: .8em;
 }
@@ -174,12 +182,12 @@ button[type="submit"] {
   margin: 2em 0 0;
   width: 100%;
   height: 80px;
-  background-color: #800080;
+  background-color: #0D0548;
   border: none;
   border-radius: 7px;
   color: white;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .footer {
@@ -196,17 +204,80 @@ button[type="submit"] {
 /*------------------------
 On focus and hover styling
 ------------------------*/
+
+:focus {
+    outline: none;
+}
+/*
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border: 2px solid #800080;
 }
+*/
 
 @media (min-width: 768px) {
 
   .container {
     max-width: 1024px;
+  }
+
+  .left {
+    display: inline-block;
+    float:left;
+    width: 25%;
+  }
+
+  input[class="form__input"],
+  .form__select {
+    margin-bottom: 1.5em;
+  }
+
+  .form__input {
+    display: inline-block;
+    float: left;
+  }
+
+/* generally .clearfix is not needed here in this project but shows error in safari 5.1 */
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  .form__select {
+    width: 75%;
+    display: inline-block;
+  }
+
+  #zip-code {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+
+  #state {
+    -webkit-padding-top: 0;
+  }
+
+
+  .form__select {
+    -webkit-margin: 0;
+  }
+
+
+  .form__legend {
+    display: inline-block;
+    padding-top: 1.2em;
+  }
+
+  .title {
+    font-size: 2em;
+    margin-bottom: 1em;
   }
 
 }
