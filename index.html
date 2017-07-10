@@ -30,10 +30,10 @@
           <legend class="form__legend">Contact Information</legend>
 
           <label class="form__label left" for="full-name">Full Name</label>
-          <input class="form__input" type="text" id="full-name" name="user_full-name" minlength="4" placeholder="Required" required>
+          <input required class="form__input" type="text" id="full-name" name="user_full-name" minlength="4" placeholder="Required">
 
           <label class="form__label left" for="email">Email Address</label>
-          <input class="form__input" type="email" id="email" name="user_email" minlength="4"  placeholder="Required" required>
+          <input required class="form__input" type="email" id="email" name="user_email" minlength="4"  placeholder="Required">
 
           <label class="form__label left" for="phone">Phone Number</label>
           <input class="form__input" type="tel" id="phone" name="user_phone-number">
@@ -106,10 +106,6 @@
       </form>
 
       <hr class="container__hr-single">
-      <section>
-      <!--  <h1 class="section__h1">Newsletter</h1> -->
-      </section>
-
       <form class="form" action="index.html" method="post">
         <fieldset class="form__fieldset">
           <legend class="form__legend">Newsletter</legend>
@@ -125,7 +121,7 @@
           <label class="form__label" for="otherTopic">Other topics you&apos;d like to hear about</label>
           <textarea class="textarea" id="otherTopic" name="user_otherTopic"></textarea>
 
-          <input type="submit" id="submit" value="Sign Up" name="user_submit"></button>
+          <input type="submit" id="submit" value="Sign Up" name="user_submit">
 
         </fieldset>
       </form>
