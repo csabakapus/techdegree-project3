@@ -6,7 +6,7 @@ General Styling
 * {
   box-sizing: border-box;
   margin: 0;
-  padding 0;
+  padding: 0;
   font-family: 'Cinzel', serif;
 
 }
@@ -220,12 +220,10 @@ On focus and hover styling
   }
 
 
-
 input:focus::-webkit-input-placeholder {
     transition: color 2s;
     color: white;
 }
-
 
 input:focus:-moz-placeholder {
   transition: color 2s;
