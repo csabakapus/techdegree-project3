@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 /*-------------
 General Styling
@@ -7,7 +7,7 @@ General Styling
   box-sizing: border-box;
   margin: 0;
   padding 0;
-  font-family: 'PT Serif', serif;
+  font-family: 'Cinzel', serif;
 
 }
 
@@ -178,7 +178,7 @@ label[for="otherTopic"] {
   margin-bottom: 1em;
 }
 
-button[type="submit"] {
+input[type="submit"] {
   margin: 2em 0 0;
   width: 100%;
   height: 80px;
@@ -207,15 +207,37 @@ On focus and hover styling
 
 :focus {
     outline: none;
+
+    /* transition for boxshadow */
+    transition: box-shadow 1s;
+    -webkit-transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+
+    /* transition for background color */
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+  }
+
+
+
+input:focus::-webkit-input-placeholder {
+    transition: color 2s;
+    color: white;
 }
-/*
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus,
+
+
+input:focus:-moz-placeholder {
+  transition: color 2s;
+  color: white;
+}
+
+input:focus,
 textarea:focus {
-  border: 2px solid #800080;
+  box-shadow: 0 2px 5px #0D0548;
+  background-color: #009BD6;
+  color: white;
 }
-*/
 
 @media (min-width: 768px) {
 
