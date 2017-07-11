@@ -68,6 +68,10 @@ Container Section Styling
   margin-top: 2px;
 }
 
+.extra__margin-top {
+  margin-top: 20px;
+}
+
 /*----------
 Form Styling
 ----------*/
@@ -85,7 +89,10 @@ Form Styling
   display: block;
 }
 
-.form__label {
+
+
+.form__label,
+.form__info {
   font-size: 1.2em;
   padding: 0;
   margin-top: 1em;
@@ -93,6 +100,7 @@ Form Styling
   display: block;
   color: gray;
 }
+
 
 .form__fieldset,
 .form__input,
@@ -292,7 +300,7 @@ textarea:focus {
 
   .form__legend {
     display: inline-block;
-    padding-top: 1.2em;
+  /*  padding-top: 1.2em; */
   }
 
   .title {
